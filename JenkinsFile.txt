@@ -8,7 +8,7 @@ steps {
 
 script {
 
-sh "hello.sh"
+sh "ci/hello.sh"
 
 }
 }
