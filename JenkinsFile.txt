@@ -2,19 +2,19 @@ pipeline { //indicate the job is written in Declarative Pipeline
 agent any //agent specifies where the pipeline will execute. 
 stages {
 
-stage ("Download the project"){
+#stage ("Download the project"){
 
-steps {
+#steps {
 
-sh '''
-cd $WORKSPACE
-git init
-git remote remove origin
-git remote add origin https://github.com/VijjuDreamzz/hello.git
-git pull origin master --allow-unrelated-histories
-'''
-}
-}
+#sh '''
+#cd $WORKSPACE
+#git init
+#git remote remove origin
+#git remote add origin https://github.com/VijjuDreamzz/hello.git
+#git pull origin master --allow-unrelated-histories
+#'''
+#}
+#}
 stage ("Execute the test suite"){
 
 steps {
